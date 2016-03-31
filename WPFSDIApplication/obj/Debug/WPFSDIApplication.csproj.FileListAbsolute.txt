@@ -1,0 +1,36 @@
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\WPFSDIApplication.exe.config
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\WPFSDIApplication.exe
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\WPFSDIApplication.pdb
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.csprojResolveAssemblyReference.cache
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\App.g.cs
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication_MarkupCompile.cache
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.g.resources
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.Properties.Resources.resources
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.csproj.GenerateResource.Cache
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.exe
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.pdb
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\Controls\Table\TableControl.baml
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\Controls\Table\TableControl.g.cs
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\TableData.xml
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\MainWindow.baml
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\MainWindow.g.cs
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\1\documents\visual studio 2013\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication_MarkupCompile.lref
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\TableData.xml
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\WPFSDIApplication.exe.config
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\WPFSDIApplication.exe
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\bin\Debug\WPFSDIApplication.pdb
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\Controls\Table\TableControl.baml
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\Controls\Table\TableControl.g.cs
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\MainWindow.g.cs
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\App.g.cs
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication_Content.g.cs
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication_MarkupCompile.cache
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication_MarkupCompile.lref
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\MainWindow.baml
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.g.resources
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.Properties.Resources.resources
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.csproj.GenerateResource.Cache
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.exe
+C:\Users\Ян Мороз\Desktop\Projects\WPFSDIApplication\WPFSDIApplication\obj\Debug\WPFSDIApplication.pdb

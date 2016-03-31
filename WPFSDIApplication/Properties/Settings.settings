@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WPFSDIApplication.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AssamblyName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WPFSDIApplication</Value>
+    </Setting>
+    <Setting Name="XMLDataFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TableData.xml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

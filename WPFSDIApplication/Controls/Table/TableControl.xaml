@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="WPFSDIApplication.Controls.Table.TableControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:converters="clr-namespace:WPFSDIApplication.Controls.Table.Converters"
+             x:Name="root">
+    <UserControl.Resources>
+        <Style x:Key="tableHeaderItemStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="Gray"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="0,2"/>
+            <Setter Property="Margin" Value="0,0,0,4"/>
+        </Style>
+        <Style x:Key="tableCellStyle" TargetType="{x:Type TextBlock}">
+            <Setter Property="Margin" Value="2,2,2,2"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="7,2,7,2"/>
+            <Setter Property="Background" Value="White"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType=Grid, AncestorLevel=1}, Path=IsMouseOver}" Value="True">
+                    <Setter Property="Background" Value="Red"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+        <GridLength x:Key="SpaceColumnWidth">4</GridLength>
+        <converters:BoolToBackgroundColorConverter x:Key="BoolToBackgroundColorConverter"/>
+    </UserControl.Resources>
+    <Grid Width="Auto" HorizontalAlignment="Left" Grid.IsSharedSizeScope="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition SharedSizeGroup="Id"/>
+                <ColumnDefinition Width="{StaticResource SpaceColumnWidth}"/>
+                <ColumnDefinition SharedSizeGroup="FirstName"/>
+                <ColumnDefinition Width="{StaticResource SpaceColumnWidth}"/>
+                <ColumnDefinition SharedSizeGroup="LastName"/>
+                <ColumnDefinition Width="{StaticResource SpaceColumnWidth}"/>
+                <ColumnDefinition SharedSizeGroup="Age"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Id" Style="{StaticResource tableHeaderItemStyle}"/>
+            <TextBlock Grid.Column="2" Text="Имя" Style="{StaticResource tableHeaderItemStyle}"/>
+            <TextBlock Grid.Column="4" Text="Фамилия" Style="{StaticResource tableHeaderItemStyle}"/>
+            <TextBlock Grid.Column="6" Text="Возраст" Style="{StaticResource tableHeaderItemStyle}"/>
+        </Grid>
+        <ScrollViewer Grid.Row="1">
+            <ItemsControl ItemsSource="{Binding Persons}" Background="#DFDFDF">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition SharedSizeGroup="Id" Width="200"/>
+                                <ColumnDefinition Width="{StaticResource SpaceColumnWidth}"/>
+                                <ColumnDefinition SharedSizeGroup="FirstName" Width="200"/>
+                                <ColumnDefinition Width="{StaticResource SpaceColumnWidth}"/>
+                                <ColumnDefinition SharedSizeGroup="LastName" Width="200"/>
+                                <ColumnDefinition Width="{StaticResource SpaceColumnWidth}"/>
+                                <ColumnDefinition SharedSizeGroup="Age" Width="200"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="{Binding Id}" Style="{StaticResource tableCellStyle}"/>
+                            <TextBlock Grid.Column="2" Text="{Binding FirstName}" Style="{StaticResource tableCellStyle}" Background="{Binding IsSelected, Converter={StaticResource BoolToBackgroundColorConverter}}"/>
+                            <TextBlock Grid.Column="4" Text="{Binding LastName}" Style="{StaticResource tableCellStyle}" Background="{Binding IsSelected, Converter={StaticResource BoolToBackgroundColorConverter}}"/>
+                            <TextBlock Grid.Column="6" Text="{Binding Age}" Style="{StaticResource tableCellStyle}" Background="{Binding IsSelected, Converter={StaticResource BoolToBackgroundColorConverter}}"/>
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="MouseDown">
+                                    <i:InvokeCommandAction Command="{Binding ElementName=root, Path=DataContext.SelectPersonCommand}" CommandParameter="{Binding}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+        <TextBlock Grid.Row="2" Text="{Binding PersonsCount, StringFormat={}Число записей: {0}}" HorizontalAlignment="Right" FontSize="14" FontWeight="Bold"/>
+    </Grid>
+</UserControl>
